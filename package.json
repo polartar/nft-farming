@@ -1,0 +1,26 @@
+{
+  "name": "NFT-yield-farming",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test:nft-yield-farming_bsc-testnet": "truffle test ./test/test-bsc/NFTYieldFarmingOnBSC.test.js --network bsc_testnet",
+    "script:nft-yield-farming_bsc-testnet": "truffle exec ./scripts/script-bsc/NFTYieldFarmingOnBSC.script.js --network bsc_testnet",
+    "compile:bsc-testnet": "truffle compile --reset --network bsc_testnet",
+    "migrate:bsc-testnet": "truffle migrate --reset --network bsc_testnet",
+    "start-blank": "rm -rf client/src && cp -rf barebones/src client/"
+  },
+  "author": "masaun",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@truffle/hdwallet-provider": "^1.2.2",
+    "dotenv": "^8.2.0",
+    "eth-block-tracker": "^4.4.3",
+    "ethereumjs-tx": "^2.1.2"
+  },
+  "devDependencies": {}
+}
